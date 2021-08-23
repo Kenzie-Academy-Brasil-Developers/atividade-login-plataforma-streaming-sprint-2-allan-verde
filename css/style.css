@@ -46,7 +46,8 @@ font-family: 'Source Sans Pro', sans-serif;
 
 /* BODY */
 body{
-	
+	background-image: url(/img/background-image.jpg);
+    font-family: Helvetica, Arial, sans-serif;
 }
 /* BODY */
 
@@ -65,11 +66,75 @@ footer{}
 
 /* PÁGINA INICIAL */
 main{
-	
+	background-color:  rgba(0, 0, 0, 0.8);
+    width: 450px;
+    height: 500px;
+    padding: 60px 68px 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
-/* PÁGINA INICIAL */
 
+h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
 
-/* EXTRAS */
+.login {
+    width: 430px;
+    height: 60px;
+    margin-bottom: 18px;
+    background-color: #333333;
+    margin-right: 50%;
+    border: none;
+    border-radius: 6%;
+    font-size: 16px;
+    padding-left: 20px;
+}
 
-/* EXTRAS */
+button {
+    margin: 20px 0;
+    width: 450px;
+    height: 60px;
+    background-color: #E62213;
+    border-radius: 6%;
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.corCinzaFonte {
+    color: #b3b3b3;
+}
+span {
+    color: #fff;
+}
+
+div {
+    column-count: 2;
+}
+
+.ajuda {
+    text-align: right;
+}
+
+.novosAssinantes {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-size: 60px;
+    color: #E62213;
+    font-weight: bolder;
+}

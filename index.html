@@ -8,30 +8,27 @@
 	<title>Netflix</title>
 </head>
 <body>
-	<header>
-		<h1>NETFLIX</h1>
+	<header class="header">
+	  <h1 class="header__title-main">NETFLIX</h1>
 	</header>
-	<main>
+
+	<main class="main">
 		<form action="" method="post">
-				<h2>Entrar</h2>
-				<input type="email" class="login" name="" id="" placeholder="Email ou número de telefone"> <br>
-				<input type="password" class="login" name="" id="" placeholder="Senha"><br>
-				<button type="submit">Entrar</button>
-			<div>
-				<input type="checkbox" checked name="" id="">
-				<label class="corCinzaFonte" for="">Lembre-se de mim</label>
-
-				<p class="ajuda corCinzaFonte">Precisa de ajuda?</p>
+			<h2 class="main__title-secondary">Entrar</h2>
+			<input type="email" name="email" class="main__login main__email" placeholder="Email ou número de telefone"> <br>
+			<input type="password" name="password" class="main__login main__password" placeholder="Senha"><br>
+			<button type="submit" class="main_button">Entrar</button>
+			
+			<div class="main__block-one">
+		  		<input type="checkbox" checked name="checkbox" class="main__checkbox">
+		  		<label class="main__label" for="checkbox">Lembre-se de mim</label>
+		  		<p class="main__paragraph-help">Precisa de ajuda?</p>
 			</div>
-
-			<p class="novosAssinantes corCinzaFonte">Novo por aqui? <span>Assine agora.</span></p>
-
-			<p class="captcha corCinzaFonte">Esta página é protejida pelo Google reCaPTCHA<br>
-			para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
-		</form>
+			<div class="main__block-two">
+		  		<p class="main__paragraph-newSubscribers">Novo por aqui? <span class="main__span">Assine agora.</span></p>
+		  		<p class="main__paragraph-recaptcha">Esta página é protejida pelo Google reCaPTCHA para garantir que você não é um robô. <a href="#" class="main__link">Saiba mais.</a></p>
+			</div>
+	  	</form>
 	</main>
-	<footer>
-		
-	</footer>
 </body>
 </html>

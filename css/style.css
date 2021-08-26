@@ -1,140 +1,167 @@
-/*!
-Theme Name: Portfólio
-Theme URI: http://underscores.me/
-Author: Maria Porcina
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: portfolio
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-Portfólio is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-
---------------------------------------------
-ESTRUTURAÇÃO BASE (HC Desenvolvimentos v1)
---------------------------------------------
-**** GERAL
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @media
-
+/*
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Slabo 27px', serif;
 font-family: 'Source Sans Pro', sans-serif;
-
 */
+:root {
+    --background-black: #000;
+    --black-opacite: rgba(0,0,0,0.6);
+    --red: #E62213;
+    --blue: #1168D0;
+    --gray-escuro: #333333;
+    --gray-medio: #595959;
+    --gray-claro: #B3B3B3;
+    --white: #fff;
 
-
-/* GERAL */
-
-/* GERAL */
-
-
-/* BODY */
+}
 body{
-	background-image: url(/img/background-image.jpg);
-    font-family: Helvetica, Arial, sans-serif;
-}
-/* BODY */
+    background-color: var(--background-black);
+    font-family: sans-serif;}
 
-
-/* HEADER */
-header{
-	
-}
-/* HEADER */
-
-
-/* FOOTER */
-footer{}
-/* FOOTER */
-
-
-/* PÁGINA INICIAL */
-main{
-	background-color:  rgba(0, 0, 0, 0.8);
-    width: 450px;
-    height: 500px;
-    padding: 60px 68px 40px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+.header {
+    padding: 3vw 2vw;
 }
 
-h2 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 40px;
+.header__title-main{
+    color: var(--red);
+    font-size: calc(25px + 1vw);
+    font-weight: bold;
 }
 
-.login {
-    width: 430px;
-    height: 60px;
-    margin-bottom: 18px;
-    background-color: #333333;
-    margin-right: 50%;
-    border: none;
-    border-radius: 6%;
+.main__title-secondary {
+    width: 100px;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 12px 6vw 20px;
+}
+
+.main__login {
+    margin: 8px 6vw ;
+    width: 83vw;
+    height: 50px;
+    border-radius: 6px;
+    background-color: var(--gray-escuro);
+    padding: 0 0 0 3vw;
+}
+.main_button {
+    width: 88vw;
+    height: 8vh;
+    border-radius: 6px;
+    background-color: var(--red);
+    color: var(--white);
     font-size: 16px;
-    padding-left: 20px;
+    font-weight: bold;
+    margin: 30px 6vw 0px;
 }
 
-button {
+.main__block-one {
+    margin: 5px 6vw 12px;
+    font-size: 12px;
+    color: var(--gray-claro)
+}
+
+.main__checkbox {
+    margin: 0;
+}
+
+.main__paragraph-help {
+    color: var(--gray-claro);
+    float: right;
+}
+
+.main__block-two {
+    margin: 5px 6vw 12px;
+    color: var(--gray-claro);
+    font-size: 13px;
+}
+
+.main__paragraph-newSubscribers {
+    font-weight: lighter;
+    font-size: 15px;
     margin: 20px 0;
-    width: 450px;
-    height: 60px;
-    background-color: #E62213;
-    border-radius: 6%;
-    font-size: 24px;
-    font-weight: 800;
-    color: #fff;
 }
 
-.corCinzaFonte {
-    color: #b3b3b3;
-}
-span {
-    color: #fff;
+.main__span {
+    color: var(--white);
 }
 
-div {
-    column-count: 2;
-}
+/* PARA TABLETS E DESKTOPS */
+@media (min-width: 740px) {
 
-.ajuda {
-    text-align: right;
-}
+    body{
+        background-image: url(/img/background-image.jpg);
+    }
 
-.novosAssinantes {
-    margin: 30px 0;
-    font-size: 20px;
-}
+    .main{
+        background-color:  rgba(0, 0, 0, 0.8);
+        width: 450px;
+        height: 500px;
+        padding: 60px 68px 40px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
 
-a {
-    text-decoration: none;
-}
+    .header__title-main {
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        font-size: 60px;
+        color: var(--red);
+        font-weight: bolder;
+    }
 
-h1 {
-    position: absolute;
-    top: 40px;
-    left: 50px;
-    font-size: 60px;
-    color: #E62213;
-    font-weight: bolder;
+    .main__title-secondary {
+        color: var(--white);
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0 0 40px 0;
+    }
+
+    .main__login {
+        box-sizing: border-box;
+        width: 450px;
+        height: 60px;
+        margin: 0 0 18px 0;
+        background-color: var(--gray-escuro);
+        margin-right: 50%;
+        border: none;
+        border-radius: 6%;
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .main_button {
+        margin: 20px 0;
+        width: 450px;
+        height: 60px;
+        background-color: var(--red);
+        border-radius: 6%;
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--white);
+    }
+
+    .main__block-one, .main__block-two {
+        color: var(--gray-claro);
+    }
+    
+    .main__paragraph-help {
+        text-align: right;
+    }
+
+    .main__paragraph-newSubscribers {
+        margin: 30px 0;
+        font-size: 20px;
+    }
+
+    .main__span {
+        color: var(--white);
+    }
+    
+    .main__link {
+        text-decoration: none;
+    }
 }
